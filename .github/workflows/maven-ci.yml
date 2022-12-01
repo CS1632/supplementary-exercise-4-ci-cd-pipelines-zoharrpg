@@ -85,7 +85,7 @@ jobs:
         uses: actions/cache@v3
         with:
           key: cached-build-${{github.sha}}
-          ath: .
+          path: .
 
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
